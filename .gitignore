@@ -1,0 +1,12 @@
+# Laragon & OS temporary files
+.htaccess
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Gemini / Antigravity Agent files (if copied inside)
+implementation_plan.md
+task.md
+walkthrough.md
+*.log

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kehidupan Kampus &amp; Kolaborasi IDDC</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-on-surface": "#f1f1ef",
+              "on-primary-fixed-variant": "#065043",
+              "surface-container": "#eeeeec",
+              "on-tertiary": "#ffffff",
+              "surface-tint": "#29695b",
+              "on-surface": "#1a1c1b",
+              "on-background": "#1a1c1b",
+              "tertiary": "#3d2a00",
+              "error-container": "#ffdad6",
+              "on-secondary-container": "#006f62",
+              "surface-bright": "#f9f9f7",
+              "on-primary-container": "#7ebdac",
+              "surface-dim": "#dadad8",
+              "primary-container": "#004d40",
+              "on-primary": "#ffffff",
+              "on-secondary": "#ffffff",
+              "on-tertiary-container": "#d1ab63",
+              "tertiary-container": "#593f00",
+              "surface-container-low": "#f4f4f2",
+              "on-primary-fixed": "#00201a",
+              "primary-fixed": "#afefdd",
+              "error": "#ba1a1a",
+              "surface-container-high": "#e8e8e6",
+              "outline": "#707975",
+              "inverse-surface": "#2f3130",
+              "outline-variant": "#bfc9c4",
+              "inverse-primary": "#94d3c1",
+              "on-error-container": "#93000a",
+              "on-secondary-fixed": "#00201b",
+              "secondary": "#006b5e",
+              "on-surface-variant": "#3f4945",
+              "primary": "#00342b",
+              "background": "#f9f9f7",
+              "primary-fixed-dim": "#94d3c1",
+              "secondary-fixed-dim": "#7ad7c6",
+              "on-error": "#ffffff",
+              "secondary-fixed": "#97f3e2",
+              "tertiary-fixed": "#ffdea5",
+              "on-tertiary-fixed-variant": "#5d4201",
+              "surface-container-highest": "#e2e3e1",
+              "surface-variant": "#e2e3e1",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-fixed": "#261900",
+              "on-secondary-fixed-variant": "#005047",
+              "tertiary-fixed-dim": "#e9c176",
+              "secondary-container": "#94f0df",
+              "surface": "#f9f9f7"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(24px);
+        }
+        .pattern-inset {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l2.5 12.5L45 15l-12.5 2.5L30 30l-2.5-12.5L15 15l12.5-2.5z' fill='%2300342b' fill-opacity='0.05'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-4">
+<img alt="IDDC Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhmS0zs5Iu5AKdQ8r5GLhv5S4Tg0NB_-lYo_ldANk7-xq6CNIGbQImvSDwa-SSrWERGzViwIYivd8pnlg29_6Lt5SFMIcjtDN3DZPfCOe6q6OOqTCjHpgjJN5FpmCgVEJFEuP8Got6-nw3NtoWRePCH1911J1QVsSnZY3HoPfbMePwV4oi2s7yWQHQrjBIlNUAtJSNnhYabhAqp46ebYy0RcvHlff1IelOjl9rR2m_OFBj5ZSYTPbeRIpESLJBlVUWzT5Ho-XL_"/>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-slate-600 hover:text-emerald-800 transition-colors font-serif text-lg tracking-tight" href="#">Profil</a>
+<a class="text-slate-600 hover:text-emerald-800 transition-colors font-serif text-lg tracking-tight" href="#">Akademik</a>
+<a class="text-emerald-700 border-b-2 border-emerald-600 pb-1 font-serif text-lg tracking-tight" href="#">Kolaborasi</a>
+<a class="text-slate-600 hover:text-emerald-800 transition-colors font-serif text-lg tracking-tight" href="#">PMB</a>
+<a class="text-slate-600 hover:text-emerald-800 transition-colors font-serif text-lg tracking-tight" href="#">Karya</a>
+<a class="text-slate-600 hover:text-emerald-800 transition-colors font-serif text-lg tracking-tight" href="#">Alumni</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-emerald-900 cursor-pointer">search</span>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-md font-medium hover:opacity-90 transition-all scale-95 duration-150">Dukungan</button>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative h-[819px] flex items-center overflow-hidden bg-surface-container-low">
+<div class="absolute inset-0 z-0">
+<img alt="vibrant campus courtyard with modern glass architecture and students collaborating in sun-drenched outdoor seating areas with lush greenery" class="w-full h-full object-cover opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz8I3CQhTQoYAjaUGibgBtzbnrPLACg74YWR3I-TVUpiz6dDfyFcJK0DnVKsk6_K6TIKdtGQS2GD0-BWgUKmPEcIDy98OJBCTUY1HApn0ZeggI6-PIYLT6_OxWHNTeFZy3PuFtQNBnSO8rlbOZwDs8wbVBNfIVpUnoIdTSyDmilmMnLxc86HFY1RcufBwCo0YcMecFH8Y-FBXzrWM73Mm1mEAcSsHQmGCYoE1aa8nBTOEicH2EykJhBP7llKr4bB2g_YKe2VYHvQ"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/40 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+<div class="max-w-2xl">
+<span class="text-secondary font-bold tracking-widest text-sm uppercase mb-4 block">Ecosystem of Excellence</span>
+<h1 class="font-headline text-7xl font-bold text-primary tracking-tight leading-none mb-6">Di Mana Hikmah Bertemu Inovasi</h1>
+<p class="text-xl text-on-surface-variant leading-relaxed mb-8">Lebih dari sekadar ruang kelas, IDDC adalah studio hidup. Jelajahi kehidupan mahasiswa yang dinamis dan kemitraan industri global yang dirancang untuk membentuk sarjana modernis.</p>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-md font-semibold text-lg flex items-center gap-2 shadow-lg">
+                            Jelajahi Kegiatan <span class="material-symbols-outlined">arrow_downward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Kegiatan Ekstra: Bento Grid Layout -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<h2 class="font-headline text-5xl font-bold text-primary mb-4">Kegiatan Ekstra</h2>
+<p class="text-on-surface-variant text-lg max-w-xl">Membentuk karakter melalui berbagai jalur ekstrakurikuler, dari pertumbuhan spiritual hingga penguasaan digital.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[800px]">
+<!-- Large Feature Card -->
+<div class="md:col-span-8 relative overflow-hidden rounded-xl bg-primary-container group">
+<img alt="diverse group of creative students in a high-tech workshop using laser cutters and digital screens for islamic geometric art" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5icJEZcuAmiTNPTm6MBrri3nGcv5JVimmU_gEdpsVBi7d5bcTJv3qJ3cnStfO4m_QMiGhG9D5TMMPPH9iJla_0FCz22ywwB5ed8bUmJYX_kItr67owcZ5flSkueJoCYBQXi0djYrs8-zO8C1sssPwhPbBof1XfxQqJnhC3mjwYXkgPypbd_HySy_kx3SGZ--Q2spBL8YHxBxNauE5deTe3JeZLE-3HRQuCWn39Bw8x49KfbXJXElgGM4Nz2QoabzVf6SDuZGZYg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary to-transparent opacity-90"></div>
+<div class="absolute bottom-0 p-10 text-white">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-xs font-bold mb-4 inline-block uppercase">Technology &amp; Art</span>
+<h3 class="text-4xl font-headline font-bold mb-4 tracking-tight">Lab Kaligrafi Digital</h3>
+<p class="text-on-primary-container text-lg max-w-lg">Seri lokakarya khas kami yang memadukan warisan artistik tradisional dengan UI/UX modern dan alat fabrikasi digital.</p>
+</div>
+</div>
+<!-- Vertical Card -->
+<div class="md:col-span-4 bg-surface-container-low p-8 rounded-xl flex flex-col justify-between border-t-4 border-secondary">
+<div>
+<span class="material-symbols-outlined text-4xl text-secondary mb-6">sports_basketball</span>
+<h3 class="text-2xl font-headline font-bold text-primary mb-4">Atletik IDDC</h3>
+<p class="text-on-surface-variant leading-relaxed">Membina disiplin fisik dan kerja tim melalui kompetisi regional dalam memanah, sepak bola, dan bela diri.</p>
+</div>
+<img alt="students practicing traditional archery in a beautiful manicured garden setting at golden hour" class="w-full h-48 object-cover rounded-lg mt-8 grayscale hover:grayscale-0 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALosf1Qm6zsY0JHq0R7kwS7zruJoJ0iktOq5QKrsg_IE8yPqtEjPU8bMUOxIVvvIP6zNuROT2xjgxHHetcIa5UizSIM7FHtDk5e6ZDCVYEY2w1aZwjrNd1Q4FC_Y0OhJFSpSK4i2bXbjEf1jkeVQ4j1FD8raH9-V-XWB_u5GDFWPD3kn85g7Do2s6Dyd2PAyyKxvUFEwYC9cUvOOTKlkm91ZHhwKtOR38_mk_btnRAtOVKXO6Nhzaugxw54VI3stDbdYxhoS_phA"/>
+</div>
+<!-- Small Bento Card -->
+<div class="md:col-span-4 bg-surface-container-high p-8 rounded-xl pattern-inset">
+<span class="material-symbols-outlined text-3xl text-primary mb-4">groups</span>
+<h3 class="text-xl font-bold text-primary mb-2">Dewan Mahasiswa</h3>
+<p class="text-sm text-on-surface-variant">Mengembangkan kepemimpinan melalui tata kelola kampus dan acara jejaring internasional.</p>
+</div>
+<!-- Horizontal Featured Card -->
+<div class="md:col-span-8 bg-surface-container-lowest p-8 rounded-xl flex flex-col md:flex-row gap-8 items-center shadow-sm">
+<div class="w-full md:w-1/2">
+<h3 class="text-2xl font-headline font-bold text-primary mb-4">Pusat Sosial Dakwah</h3>
+<p class="text-on-surface-variant mb-6">Inisiatif dampak komunitas kami di mana mahasiswa merancang dan menerapkan solusi teknologi untuk organisasi nirlaba lokal.</p>
+<a class="text-primary font-bold flex items-center gap-2 group" href="#">
+                                Pelajari dampak kami <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</a>
+</div>
+<img alt="students teaching digital literacy to elderly community members in a warm library setting" class="w-full md:w-1/2 h-48 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8JPVG7u8PN6kuN12K6UA99i9tC2VFVveXDbcVL33PGJ_Hn3WboGJzU9mtuVoCsKsRYBi5gx6xbN5sOk13nZoCNewaQfsjk65tb9zfLE8wHilJPejWEJlkBN1981azrZCJya28ghcV1YOloVFcewwSb4cSvw5c2HDEbp2KR_BnPKHAHLoxRjPWk0w5yUtOk6xgWyIPbRCPVh-0JhBsSRoUsxlOjrlQCGGQvq_OgkEZdxIC3WWzjevt7xEqiUlQ-vOBw3da1AEhIw"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Kolaborasi Section -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="max-w-2xl">
+<h2 class="font-headline text-5xl font-bold text-primary mb-6">Kolaborasi &amp; Jejaring</h2>
+<p class="text-xl text-on-surface-variant">Kami menjembatani kesenjangan antara akademisi dan dunia profesional melalui kemitraan strategis dengan raksasa industri dan lembaga global.</p>
+</div>
+<div class="flex gap-4 mb-2">
+<div class="h-1 w-24 bg-tertiary-fixed-dim"></div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Partner Card 1 -->
+<div class="group">
+<div class="relative mb-6 overflow-hidden rounded-xl h-64">
+<img alt="students visiting a high-tech architecture firm with glass walls and blueprint displays" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFFnN0qktAOF5xrovUMrUpWNJeyrXQDu7_5QI6cKNLg-36aWEg2lYHlLdvXg5jFIoT3Rkp-l90JeWEkArGnA6Hsl3HQnlaWprd0cQyzkxpDB1voFuI2pJG6M04OY0rH5ZP7lvsN73nkCmCT2_hSqR6sSJX4vxJjmPuLN7jaOVNwpq6wlxnuLWCwdDtIZsS6UtQkN-0s0do_XqnbgXfMJn5vV7BxZZ_4wtwnwRJgVnNjzFMa2_gbaqXkIo9yYhXYqB3bGe7rLZyNw"/>
+<div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors"></div>
+</div>
+<h3 class="text-xl font-bold text-primary mb-2">Imersi Industri</h3>
+<p class="text-on-surface-variant mb-4">Kunjungan bulanan ke agensi kreatif papan atas dan pusat teknologi untuk memahami alur kerja dunia nyata dan etika profesional.</p>
+<div class="flex items-center gap-2 text-secondary font-semibold text-sm">
+<span class="material-symbols-outlined text-base">verified</span>
+                            24+ Agensi Mitra
+                        </div>
+</div>
+<!-- Partner Card 2 -->
+<div class="group">
+<div class="relative mb-6 overflow-hidden rounded-xl h-64">
+<img alt="a professional guest lecturer speaking at a lectern in a modern lecture hall with students taking notes on tablets" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxKLrOKn3h-dUNPCJD708ttntIvj15t7GgTLhe8xCArjTU0cC3dBvQFTSZ9IlR8QTj7iuqmOYR-ZNIo_c4aqzICijpb9aWrh8xSux2Z_M4DAPTozDHZhYy8xuy4t5STr5-tUeJSuNwU2EblDTieLSpoqG1Jx-UmmVORvB9VYhOgXvJZkoGS0aMGWLHhoGTB5fSkKsPk_29Fay2pLb-_niBGgO3K-uk-RljqUgX_ivRrVLGU2AGQCly6dvZRex0kX0nriQ-YYhCCw"/>
+<div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors"></div>
+</div>
+<h3 class="text-xl font-bold text-primary mb-2">Pakar Tamu</h3>
+<p class="text-on-surface-variant mb-4">Seminar dua mingguan yang menampilkan pemimpin global dalam desain etis, keuangan Islam, dan perencanaan kota berkelanjutan.</p>
+<div class="flex items-center gap-2 text-secondary font-semibold text-sm">
+<span class="material-symbols-outlined text-base">event_note</span>
+                            Setiap Selasa Kedua
+                        </div>
+</div>
+<!-- Partner Card 3 -->
+<div class="group">
+<div class="relative mb-6 overflow-hidden rounded-xl h-64">
+<img alt="student working at a modern office desk with a mentor looking at a high-end monitor screen" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTHObg1iRrbO6-JU0p7A7xnwvNPM26UsRjq-VrCttS03mQ9lZp19ZTUie7NtLsLtcIznz1uM_dpU5whxDG7W3jtS5eZ73bhU0hEGa9wVOBrmansuUq_d92A4aYabK4V6f23ct2VxfXE4PvgoFvfuMer-tNUmnfPbB0ZCxaSc9RJN1O8IlYIitf46hrYL821SjxR3B8Lt6pigEGHfVkXLjhOzrwibvAI1rbnEqvQbtrehkIJJ8nCBWfZcLdV0152adDPgWNtl2Bkg"/>
+<div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors"></div>
+</div>
+<h3 class="text-xl font-bold text-primary mb-2">Magang Global</h3>
+<p class="text-on-surface-variant mb-4">Peluang penempatan langsung dengan mitra korporat kami di Dubai, Kuala Lumpur, dan Jakarta.</p>
+<div class="flex items-center gap-2 text-secondary font-semibold text-sm">
+<span class="material-symbols-outlined text-base">public</span>
+                            Program Penempatan Global
+                        </div>
+</div>
+</div>
+<!-- Logo Cloud -->
+<div class="mt-32 p-12 bg-surface-container-highest rounded-2xl flex flex-wrap justify-center gap-16 items-center opacity-70">
+<div class="text-primary font-bold text-2xl tracking-tighter mix-blend-multiply italic">TECHFORGE</div>
+<div class="text-primary font-bold text-2xl tracking-tighter mix-blend-multiply">Amana.Invest</div>
+<div class="text-primary font-bold text-2xl tracking-tighter mix-blend-multiply italic underline decoration-tertiary">CREA_STUDIO</div>
+<div class="text-primary font-bold text-2xl tracking-tighter mix-blend-multiply uppercase tracking-widest">Helix</div>
+<div class="text-primary font-bold text-2xl tracking-tighter mix-blend-multiply">UmmahConnect</div>
+</div>
+</div>
+</section>
+<!-- Community Impact / Pull Quote Section -->
+<section class="py-32 bg-surface">
+<div class="max-w-5xl mx-auto px-8 text-center">
+<div class="inline-block p-4 mb-8">
+<span class="material-symbols-outlined text-6xl text-tertiary-fixed-dim">format_quote</span>
+</div>
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-primary leading-tight mb-12 italic">
+                    "Di IDDC, kami tidak hanya mengajarkan keahlian; kami memberdayakan jiwa. Kolaborasi kami memastikan setiap mahasiswa menjadi kontributor bagi masa depan digital umat global."
+                </h2>
+<div class="flex flex-col items-center">
+<div class="w-20 h-20 rounded-full overflow-hidden mb-4 border-4 border-surface-container-high">
+<img alt="professional portrait of a dignified male educator" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt097ujKAKXcGueEEekm5dlwZNFd--4GRku6XPP1H8ZUGh2kj-3iMQLAmybw7XzvfQfaA2IPtmrGfL7NFSdp-TvGkpQnBGLwUIiYlwqkKuhnKIAmw7Zenob7S2EwZljiz47UTf4ROLZabxksJdPzR28cbuQC5hs52lSsDeH0hi_UssLeCz06JRfddpyGH86jnt-mbs1NrFfXMKjPkDhX-YWsWDzczXncUrDNCeBIsyBQPhVwgndA7Azw4po_3V9nBN7axNNsgA_g"/>
+</div>
+<span class="font-bold text-primary text-xl">Dr. Ahmad Al-Zahrani</span>
+<span class="text-on-surface-variant text-sm uppercase tracking-widest">DEKAN URUSAN MAHASISWA</span>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-20 max-w-7xl mx-auto px-8 mb-32">
+<div class="bg-primary-container rounded-3xl p-16 relative overflow-hidden text-center text-white">
+<div class="absolute inset-0 pattern-inset opacity-10"></div>
+<div class="relative z-10">
+<h2 class="font-headline text-5xl font-bold mb-6">Siap Bergabung dengan Komunitas Kami?</h2>
+<p class="text-xl text-on-primary-container mb-10 max-w-2xl mx-auto">Pendaftaran untuk semester mendatang telah dibuka. Mulailah perjalanan Anda menjadi kreator visioner hari ini.</p>
+<div class="flex justify-center gap-6">
+<button class="bg-white text-primary px-10 py-4 rounded-md font-bold text-lg hover:bg-surface-container-lowest transition-colors">Daftar PMB</button>
+<button class="border border-white/30 text-white px-10 py-4 rounded-md font-bold text-lg hover:bg-white/10 transition-colors">Unduh Brosur</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-emerald-900 text-emerald-50 w-full py-12 px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="space-y-4">
+<img alt="IDDC Logo" class="h-12 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida/ADBb0uhmS0zs5Iu5AKdQ8r5GLhv5S4Tg0NB_-lYo_ldANk7-xq6CNIGbQImvSDwa-SSrWERGzViwIYivd8pnlg29_6Lt5SFMIcjtDN3DZPfCOe6q6OOqTCjHpgjJN5FpmCgVEJFEuP8Got6-nw3NtoWRePCH1911J1QVsSnZY3HoPfbMePwV4oi2s7yWQHQrjBIlNUAtJSNnhYabhAqp46ebYy0RcvHlff1IelOjl9rR2m_OFBj5ZSYTPbeRIpESLJBlVUWzT5Ho-XL_"/>
+<p class="opacity-80 leading-relaxed font-sans text-sm tracking-wide">
+                    Islamic Design &amp; Dakwah College adalah pusat pendidikan tinggi di mana warisan budaya bertemu dengan inovasi.
+                </p>
+</div>
+<div>
+<h4 class="font-bold mb-6">Lembaga</h4>
+<ul class="space-y-4 opacity-80 hover:opacity-100 transition-opacity font-sans text-sm tracking-wide">
+<li><a class="hover:text-white underline decoration-emerald-500/50" href="#">Profil IDDC</a></li>
+<li><a class="hover:text-white underline decoration-emerald-500/50" href="#">Aktifitas Kuliah</a></li>
+<li><a class="hover:text-white underline decoration-emerald-500/50" href="#">Kegiatan Ekstra</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Keterlibatan</h4>
+<ul class="space-y-4 opacity-80 hover:opacity-100 transition-opacity font-sans text-sm tracking-wide">
+<li><a class="text-emerald-200 font-bold" href="#">Kolaborasi</a></li>
+<li><a class="hover:text-white underline decoration-emerald-500/50" href="#">PMB</a></li>
+<li><a class="hover:text-white underline decoration-emerald-500/50" href="#">Alumni Network</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Hubungi Kami</h4>
+<ul class="space-y-4 opacity-80 hover:opacity-100 transition-opacity font-sans text-sm tracking-wide">
+<li><a class="hover:text-white underline decoration-emerald-500/50" href="#">Instagram</a></li>
+<li><a class="hover:text-white underline decoration-emerald-500/50" href="#">YouTube</a></li>
+<li><a class="hover:text-white underline decoration-emerald-500/50" href="#">LinkedIn</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-emerald-800 text-center opacity-60 font-sans text-sm tracking-wide">
+            © 2024 Islamic Design &amp; Dakwah College. Crafted for the Modernist Scholar.
+        </div>
+</footer>
+<script src="navigation.js"></script></body></html>
